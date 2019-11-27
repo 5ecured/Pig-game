@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .active {
+            background-color:lightgrey;
+        }
+        .dice {
+            height: 100px;
+            border: ridge;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='container'>
+        <div class='row'>
+            <div class='col-lg-12 text-center'>
+                <button id='newGameButton'>New Game</button>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-lg-4 text-center active' id='p0'>
+                <div id='namep0' style='height: 85px'>
+                    <strong>Player 1</strong>
+                </div>
+                <div>
+                    Total score:
+                </div>
+                <div id='totalp0'>
+                    0
+                </div>
+                <div>
+                    Current score:
+                </div>
+                <div id='currentp0'>
+                    0
+                </div>
+            </div>
+            <div class='col-lg-4 text-center'>
+                <div>
+                    Welcome to the Pig game!
+                </div>
+                <div>
+                    <br>
+                </div>
+                <div>
+                    <button id='rollDiceButton'>Roll dice</button>
+                    <button id='holdButton'>Hold</button>
+                </div>
+                <div>
+                    <img src='dice-1.png' id='diceNumber' class='dice'>  <!--To access the src to change the dice picture, give it an id. The class 'dice' was for CSS(styling) only. -->
+                </div>
+            </div>
+            <div class='col-lg-4 text-center' id='p1'>
+                    <div id='namep1' style='height: 85px'>
+                        <strong>Player 2</strong>
+                    </div>
+                    <div>
+                        Total score:
+                    </div>
+                    <div id='totalp1'>
+                        0
+                    </div>
+                    <div>
+                        Current score:
+                    </div>
+                    <div id='currentp1'>
+                        0
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <script src='pig.js'></script>
+</body>
+
+</html>
